@@ -1,0 +1,123 @@
+<html>
+
+<head>
+<title> Online Dairy Mart </title>
+<style type="text/css">
+
+    body{
+        background-color:rgb(62, 182, 126)
+    }
+    p1{
+        color:rgb(33, 136, 33);
+        font-family: bahnschrift;
+        font-size: 1cm;
+    }
+    p2{
+        color:rgb(0, 90, 143);
+        font-family: bahnschrift;
+        font-size: 30px;
+    }
+    p3{
+        color:rgb(11, 106, 161);
+        font-family: bahnschrift;
+        font-size: 26px;
+        
+    }
+    p4{
+        color:rgb(11, 106, 161);
+        font-family: bahnschrift;
+        font-size: 24px;
+        
+    }
+    label{
+        color: rgb(0, 90, 143);
+        font-size: 20px;
+        font-family: bahnschrift;
+    }
+    p5{
+        color:rgb(113, 6, 175);
+        font-family: bahnschrift;
+        font-size: 24px;
+        
+    }
+</style>
+</head>
+
+<center>
+    <?php include_once("OnlineShopping.html"); ?>
+
+<p1><b>Online Dairy Mart </p1>
+<br>
+<p5> <b>Order any fresh dairy item you want from the closest shops!</p5>
+
+
+<table border=0>
+
+  
+<tr>
+  <td> <IMG SRC="https://www.heritagefoods.in/static/images/detailslider/milk/special-milk.png" width="250", height="180", ALT="Heritage Fresh Milk"> </td>
+  <td> 
+     <p2><b> Milk </p2> 
+        <br>
+     <p3>Rs. 23 (500ml)</p3>
+        <br>
+     <p4>Description: Nutritious Milk from freshly-milked cows </p4> 
+        <br>
+     <label for="milk-qty">Quantity:</label>
+     <input type="text" id="milk-qty" name="milk-qty" value="0" size=3>
+  </td>
+</tr>
+
+<tr> 
+  <td> <IMG SRC="https://www.bigbasket.com/media/uploads/p/l/40003150_3-milky-mist-paneer-premium-fresh.jpg"  width="200", height="180", ALT="Tomato"> </td>
+
+  <td> 
+     <p2><b> Paneer </p2> 
+        <br>
+     <p3> Rs. 240 (500g) </p3>
+     <br>
+     <p4> Delicious Paneer with the power of protein! </p4> 
+     <br>
+     <label for="paneer-qty">Quantity:</label>
+     <input type="text" id="paneer-qty" name="paneer-qty" value="0" size=3>
+  </td>
+</tr>
+
+<tr> 
+  <td> <IMG SRC="https://www.bigbasket.com/media/uploads/p/l/40165199_3-heritage-curd.jpg"  width="200", height="180", ALT="Capsicum"> </td>
+
+  <td> 
+     <p2><b> Curd </p2> 
+        <br>
+     <p3> Price: Rs. 110 (1 kg) </p3>
+     <br>
+     <p4> Freshly prepared curd </p4> 
+     <br>
+     <label for="curd-qty">Quantity:</label>
+     <input type="text" id="curd-qty" name="curd-qty" value="0" size=3>
+  </td>
+</tr>
+
+</table>
+    
+<br>
+<tr> 
+    <td>
+       <label>Name:</label>
+       <input type="text" id="name" name="name" size=15>
+    </td>
+   
+    <td>
+       <label>Address:</label> 
+       <input type="text" id="address" name="address" size=50>
+    </td>
+ </tr>
+<input type="submit" value="Place Order" onclick="document.location='submit.html'">
+
+
+</form>
+
+    
+</center>
+</body>
+</html>
